@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from './ui/button';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -64,7 +63,12 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center">
-            <Button className="cta-button">Contact Us</Button>
+            <Button 
+              onClick={() => scrollToSection('footer')} 
+              className="bg-[#F6B017] text-black font-semibold px-6 py-3 rounded-md hover:bg-[#E5A416] transition-colors"
+            >
+              Contact Us
+            </Button>
           </div>
         </div>
       </div>
