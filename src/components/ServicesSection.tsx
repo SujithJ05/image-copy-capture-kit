@@ -1,21 +1,22 @@
 
 import React from 'react';
+import { Code, SocialIcon, BarChart } from 'lucide-react';
 
 const services = [
   {
-    title: "Script Writing",
-    description: "Professional script writing services for all your creative needs",
-    icon: "📝",
+    title: "Website Designer",
+    description: "Custom website design and development for your digital presence",
+    icon: Code,
   },
   {
-    title: "Graphic Designing",
-    description: "Creative and innovative graphic design solutions",
-    icon: "🎨",
+    title: "SMO Expert",
+    description: "Strategic social media optimization to boost your online reach",
+    icon: SocialIcon,
   },
   {
-    title: "Video Editing",
-    description: "Professional video editing and post-production services",
-    icon: "🎬",
+    title: "Google ADS Manager",
+    description: "Effective Google Ads management to maximize your ROI",
+    icon: BarChart,
   },
 ];
 
@@ -26,7 +27,9 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {services.map((service) => (
           <div key={service.title} className="service-card">
-            <div className="text-4xl mb-4">{service.icon}</div>
+            <div className="text-4xl mb-4">
+              <service.icon className="w-12 h-12 text-[#F6B017]" />
+            </div>
             <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
             <p className="text-gray-400">{service.description}</p>
             <a href="#" className="inline-block mt-4 text-[#F6B017] hover:text-[#E5A416]">
