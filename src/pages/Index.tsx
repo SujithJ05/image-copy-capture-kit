@@ -12,7 +12,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <Separator className="h-px bg-gray-800 mx-auto max-w-7xl my-8" />
       <ServicesSection />
+      <Separator className="h-px bg-gray-800 mx-auto max-w-7xl my-8" />
       <TeamSection />
       <Separator className="h-px bg-gray-800 mx-auto max-w-7xl my-8" />
       <Footer />
