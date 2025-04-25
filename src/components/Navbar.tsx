@@ -3,6 +3,13 @@ import React from 'react';
 import { Button } from './ui/button';
 
 const Navbar = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,13 +17,33 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <span className="text-2xl font-bold text-white">RY</span>
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-8">
-              <a href="#" className="nav-link">Home</a>
-              <a href="#services" className="nav-link">Services</a>
-              <a href="#creators" className="nav-link">Creators</a>
-              <Button className="cta-button">Contact Us</Button>
+          
+          {/* Center navigation links */}
+          <div className="flex-1 flex justify-center">
+            <div className="flex items-center space-x-8">
+              <button 
+                onClick={() => scrollToSection('hero')} 
+                className="nav-link"
+              >
+                Home
+              </button>
+              <button 
+                onClick={() => scrollToSection('services')} 
+                className="nav-link"
+              >
+                Services
+              </button>
+              <button 
+                onClick={() => scrollToSection('creators')} 
+                className="nav-link"
+              >
+                Creators
+              </button>
             </div>
+          </div>
+
+          <div className="flex items-center">
+            <Button className="cta-button">Contact Us</Button>
           </div>
         </div>
       </div>

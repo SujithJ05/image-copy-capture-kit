@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Button } from './ui/button';
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center text-center px-4 pt-16">
+    <div id="hero" className="min-h-screen flex items-center justify-center text-center px-4 pt-16">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
           Creative Solutions for Your Business
