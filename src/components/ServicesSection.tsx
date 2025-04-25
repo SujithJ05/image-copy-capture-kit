@@ -1,8 +1,23 @@
 
 import React from 'react';
-import { Code, SocialIcon, BarChart } from 'lucide-react';
+import { Code, MessageSquare, BarChart2, Pencil, Palette, Film } from 'lucide-react';
 
 const services = [
+  {
+    title: "Script Writing",
+    description: "Professional script writing services for all your creative needs",
+    icon: Pencil,
+  },
+  {
+    title: "Graphic Designing",
+    description: "Creative and innovative graphic design solutions",
+    icon: Palette,
+  },
+  {
+    title: "Video Editing",
+    description: "Professional video editing and post-production services",
+    icon: Film,
+  },
   {
     title: "Website Designer",
     description: "Custom website design and development for your digital presence",
@@ -11,12 +26,12 @@ const services = [
   {
     title: "SMO Expert",
     description: "Strategic social media optimization to boost your online reach",
-    icon: SocialIcon,
+    icon: MessageSquare,
   },
   {
     title: "Google ADS Manager",
     description: "Effective Google Ads management to maximize your ROI",
-    icon: BarChart,
+    icon: BarChart2,
   },
 ];
 
