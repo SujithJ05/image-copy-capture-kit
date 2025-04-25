@@ -51,17 +51,19 @@ const TeamSection = () => {
           <CarouselContent className="-ml-2 md:-ml-4">
             {teamMembers.map((member, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/3">
-                <div className="team-card">
+                <div className="team-card p-6 rounded-lg bg-[#1a1f2e] transition-transform hover:scale-105">
                   <div className="w-full aspect-video bg-gray-800 rounded-lg mb-4"></div>
-                  <h3 className="text-xl font-semibold">{member.name}</h3>
+                  <h3 className="text-xl font-semibold text-white">{member.name}</h3>
                   <p className="text-[#F6B017] mb-2">{member.role}</p>
                   <p className="text-gray-400">{member.email}</p>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
+          <div className="flex justify-center gap-4 mt-8">
+            <CarouselPrevious className="static bg-gray-800 hover:bg-gray-700 border-none" />
+            <CarouselNext className="static bg-gray-800 hover:bg-gray-700 border-none" />
+          </div>
         </Carousel>
       </div>
     </section>
