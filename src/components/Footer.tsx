@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
@@ -17,7 +18,12 @@ const Footer = () => {
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Facebook size={24} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <a 
+              href="https://www.instagram.com/ry_services?igsh=YmRldGVnanRqdG1m" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-[#E1306C] transition-colors"
+            >
               <Instagram size={24} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
