@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, User, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -38,10 +38,12 @@ const Footer = () => {
           <h3 className="text-2xl font-bold mb-4">Our Leadership</h3>
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
+              <User size={20} className="text-gray-400" />
               <span className="text-gray-400">Founder</span>
               <span>Ramisetty RaghuRam</span>
             </div>
             <div className="flex items-center space-x-3">
+              <User size={20} className="text-gray-400" />
               <span className="text-gray-400">Co-founder</span>
               <span>Yashwanth Giri</span>
             </div>
@@ -50,8 +52,14 @@ const Footer = () => {
         <div>
           <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
           <div className="space-y-4">
-            <p className="text-gray-400">raghu.ramisetty9@gmail.com</p>
-            <p className="text-gray-400">+91 6309067564</p>
+            <div className="flex items-center space-x-3">
+              <Mail size={20} className="text-gray-400" />
+              <p className="text-gray-400">raghu.ramisetty9@gmail.com</p>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Phone size={20} className="text-gray-400" />
+              <p className="text-gray-400">+91 6309067564</p>
+            </div>
           </div>
         </div>
       </div>
