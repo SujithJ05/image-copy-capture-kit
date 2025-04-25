@@ -65,7 +65,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Button 
               onClick={() => scrollToSection('footer')} 
-              className="bg-[#F6B017] text-black font-semibold px-6 py-3 rounded-md hover:bg-[#E5A416] transition-colors"
+              className="bg-[#F6B017] hover:bg-[#F6B017] text-black font-semibold rounded-lg px-8 py-3 text-base transition-transform hover:scale-105"
             >
               Contact Us
             </Button>
